@@ -1,6 +1,6 @@
 # Communication via Memory-Mapped Files
 
-## This project demonstrates an application that enables communication between multiple instances using memory-mapped files. Each instance can send messages provided by the user to other instances through a shared memory-mapped file. All instances are notified of the existence of a new message, which they retrieve and display in real time.
+This project demonstrates an application that enables communication between multiple instances using memory-mapped files. Each instance can send messages provided by the user to other instances through a shared memory-mapped file. All instances are notified of the existence of a new message, which they retrieve and display in real time.
 
 ### Features
 
@@ -22,16 +22,22 @@
     A notification mechanism alerts all other instances of the new message.
     The instances read the message from the memory-mapped file and display it to the user.
 
-## Setup and Usage
+### Setup and Usage
 
-1. Clone this repository:
-  ```bash
-  git clone https://github.com/andricolae/sender-receiver-memory-map-C.git
-  cd proiect
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/andricolae/sender-receiver-memory-map-C.git
 
-3. Run multiple instances of the application:
-    ```bash
-    cd proiect\x64\Debug
-    .\proiect.exe #as many times as many instances you want
+2. Navigate to the project directory:
+   ```bash
+   cd proiect
+
+3. Run multiple instances
+   ```bash
+   cd proiect\x64\Debug
+
+4. Open in terminal and launch as many instances as you want
+   ```bash
+   .\proiect.exe
 
 Follow the instructions and type a message in one instance and observe it being broadcasted to others in real-time.
